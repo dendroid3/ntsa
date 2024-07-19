@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href=
+        "https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <title>NTSA</title>
+
+        <style>
+
+        </style>
+    </head>
+    <body>
+
+        <!-- NavBar -->
+        <nav class="relative container mx-auto">
+            <div class="flex items-center justify-between">
+                <!-- logo -->
+                <div class="pt-2">
+                <img src="./img/logo.svg" alt="Logo">
+                </div>
+                <!-- menu-items -->
+                <div class="hidden md:flex space-x-6">
+                    <a href="#" class="hover:text-darkGrayishBlue">Home</a>
+                    <a href="#" class="hover:text-darkGrayishBlue">About</a>
+                    <a href="#" class="hover:text-darkGrayishBlue">Services Us</a>
+                    <a href="#" class="hover:text-darkGrayishBlue">Contact</a>
+                    <a href="#" class="hover:text-darkGrayishBlue">Up For Sale</a>
+                    <a href="#" class="hover:text-darkGrayishBlue">Dashboard</a>
+                </div>
+                <!-- button -->
+                 <div class="flex">
+                    <a
+                    class="p-3 mx-1 px-6 pt-2 bg-red-500 text-white"
+                    >
+                       Cart
+                    </a>
+                 </div>
+            </div>
+        </nav>
+
+        <!-- Cart PopUp -->
+        <!-- <div class="fixed top-0 bottom-0 right-0 left-0 p-8 bg-red-500 items-start justify-center flex content-center" id="cart_pop_up">
+            <div>
+                <h3 class="text-4xl bg-red-700 flex content-center justify-center">Your Cart</h3>
+                <table class="table-auto bg-gray-400">
+                    <thead>
+                    <tr>
+                        <th>Car Name</th>
+                        <th>Unit Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>The Sliding</td>
+                        <td>Malcolm Lockyer</td>
+                        <td>1961</td>
+                        <td>1961</td>
+                    </tr>
+                    <tr>
+                        <td>Witchy Woman</td>
+                        <td>The Eagles</td>
+                        <td>1972</td>
+                        <td>1972</td>
+                    </tr>
+                    <tr>
+                        <td>Shining Star</td>
+                        <td></td>
+                        <td></td>
+                        <td>1975</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div> -->
+
+
+        <!-- View Car Popup -->
+        <div class="fixed top-0 bottom-0 p-8 bg-transparent hidden items-center justify-center flex content-center" id="pop_up"></div>
+
+        <!-- Cars Content -->
+        <div class="flex flex-row container px-12 mt-12 items-center justify-between grid grid-cols-3 gap-4" id="carsSection"></div>
+
+        <!-- Inject Script -->
+        <script src="index.js"></script>
+    </body>
+</html>
